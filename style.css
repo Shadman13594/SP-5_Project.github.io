@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Sansita+Swashed:wght@700&family=Source+Sans+Pro:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/* navigation bar deisgn */
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background: rgb(0, 0, 0);
+    z-index: 1000;
+    opacity: 80%;
+    
+}
+a:link {
+    color: rgb(250, 250, 250);
+  }
+  
+
+  a:visited {
+    color: rgb(243, 243, 243);
+  }
+
+.logo{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    color:rgb(0, 183, 255);
+    cursor: pointer;
+    
+}
+
+.photobannar{
+    position:absolute;
+    top: 0px;
+    height: 700px;
+    width: 100%;
+    z-index: -3;
+}
+
+.photobannaroverlay{
+    position:absolute;
+    top: 0px;
+    height: 700px;
+    width: 100%;
+    opacity: .1;
+    transition: ease 1s ;
+    backface-visibility: hidden;
+    z-index: 0;
+    
+
+}
+.photobannaroverlay:hover {
+    opacity: 1;
+}
+
+
+nav{
+    padding:10px 0px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0px; 
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover{
+    color:rgb(65, 211, 255);
+}
+/* header section deisng */
+section{
+    padding: 50px 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    background: url(image/bg2.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.textimg{
+    position: absolute;
+    top:63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.textimg{
+    text-align: center;
+}
+.textimg h3{
+    color:#ffff;
+    margin-top: 50px;
+
+}
+.textimg h1{
+    color:#ffff;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+.bottonText{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+.bottonText button{
+    outline: none;
+    border: none;
+    background: #33beff;
+    padding: 10px 10px;
+    color:rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    transition:.5s;
+}
+.bottonText button:hover{
+    background: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.dateData{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+.dateall p{
+    color:rgb(255, 255, 255);
+    font-weight: 400;
+}
+.dateall p .day{
+    color:rgb(51, 51, 51);
+}
+.dateall p .month{
+    color:rgb(51, 51, 51);
+}
+.dateall p .year{
+    color:rgb(51, 51, 51);
+}
+.dateall p .writer{
+    color: rgb(255, 145, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* blog-top deisng */
+
+.blog-top{
+    position: relative;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-top .blog{
+    position: relative;
+    width: 400px;
+    margin: 10px;
+    height: 260px;
+    box-sizing: border-box;
+}
+.blog .bottonText{
+    left: 0;
+    bottom: 90px;
+}
+
+.blog-top .blog img{
+    width: 100%;
+    height: 190px;
+}
+.dateall p{
+    font-size: 10px;
+}
+.content{
+    position: relative;
+    background: url(image/blog-final-3.jpg);
+    min-height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content .textimg{
+    color:#fff;
+}
+.content .textimg p{
+    font-size: 13px;
+    margin-top: 15px;
+}
+.content .bottonText{
+    left: 0;
+    bottom: 20px;
+}
+.content .dateData{
+    right: 0;
+    bottom: 20px;
+}
+.bolog-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bolog-4 .blog{
+    position: relative;
+    width: 350px;
+    height: 240px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.bolog-4 .blog img{
+    width: 100%;
+    height: 180px;
+}
+.bolog-4 .blog h4{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+footer{
+    padding: 25px 100px;
+    background: #333;
+    text-align: center;
+}
+footer p{
+    color:#fff;
+    font-weight: 400;
+}
+
+/* media start */
+@media(max-width:990px){
+    header{
+        padding:20px 50px;
+    }
+    section{
+        padding: 88px 50px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(image/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+        cursor: pointer;
+        background-size: 30px;
+    }
+    .menu{
+        position: fixed;
+        top: 79px;
+        left: -100%;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        padding: 100px 50px;
+        z-index: 1111;
+        background: rgb(216, 212, 212);
+        transition: .5s;
+    }
+    .menu ul li{
+        display: block;
+    }
+    .menu.active{
+        left: 0;
+        background: #000;
+        
+    }
+    .toggle.active{
+        background:url(image/close.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        cursor: pointer;
+    
+    }
+    .bottonText {
+        left: 50px;
+    }
+    .dateData {
+        right: 50px;
+    }
+    .dateall p {
+        font-size: 8px;
+    }
+    .bottonText button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .blog-top {
+        flex-direction: column;
+    }
+    .blog-top .blog {
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .blog h4{
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .content .textimg h2{
+        font-size: 15px;
+    }
+    .content .textimg p{
+        font-size: 12px;
+    }
+    .bolog-4 .blog {
+        flex-direction: column;
+        width: 100%;
+    }
+    .bolog-4 .blog h4 {
+        font-size: 13px;
+    }
+}
